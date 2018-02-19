@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/stympy/faker.git
+  revision: 679fd508c9f41f41b6df62024d67bc2281953395
+  branch: master
+  specs:
+    faker (1.8.7)
+      i18n (>= 0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,6 +61,7 @@ GEM
       xpath (>= 2.0, < 4.0)
     childprocess (0.8.0)
       ffi (~> 1.0, >= 1.0.11)
+    coderay (1.1.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -69,9 +78,20 @@ GEM
       activesupport (>= 4.2.0)
     graphiql-rails (1.4.8)
       rails
-    graphql (1.7.7)
+    graphql (1.7.12)
+    graphql-batch (0.3.8)
+      graphql (>= 0.8, < 2)
+      promise.rb (~> 0.7.2)
+    graphql-errors (0.1.0)
+      graphql (>= 1.6.0, < 2)
+    graphql-preload (1.0.4)
+      activerecord (>= 3.2, < 6)
+      graphql (>= 1.5, < 2)
+      graphql-batch (~> 0.3)
+      promise.rb (~> 0.7)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
+    interception (0.5)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
@@ -92,9 +112,24 @@ GEM
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
+    promise.rb (0.7.4)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-byebug (3.6.0)
+      byebug (~> 10.0)
+      pry (~> 0.10)
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
+    pry-rescue (1.4.5)
+      interception (>= 0.5)
+      pry
+    pry-theme (1.2.0)
+      coderay (~> 1.1)
     public_suffix (3.0.2)
     puma (3.11.2)
     rack (2.0.4)
+    rack-cors (1.0.2)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rails (5.1.5)
@@ -181,11 +216,19 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  faker!
   graphiql-rails
   graphql
+  graphql-errors
+  graphql-preload
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  pry-byebug
+  pry-rails
+  pry-rescue
+  pry-theme
   puma (~> 3.7)
+  rack-cors
   rails (~> 5.1.5)
   sass-rails (~> 5.0)
   selenium-webdriver

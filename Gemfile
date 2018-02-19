@@ -7,6 +7,18 @@ end
 
 gem 'graphql'
 gem 'graphiql-rails', group: :development
+gem 'graphql-preload'
+gem 'graphql-errors'
+
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+gem 'rack-cors', :require => 'rack/cors'
+
+# Pry (available in all envs)
+gem 'pry-byebug'
+gem 'pry-rails'
+gem 'pry-rescue'
+gem 'pry-theme'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
